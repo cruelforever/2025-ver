@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 預設字體大小 */
+    body {
+      font-size: 16px;
+    }
+    
+    /* 在電腦上，字體大小不變 */
+    @media only screen and (min-width: 768px) {
+      body {
+        font-size: 24px;
+      }
+    }
+    
+    /* 在手機上，字體大小更改為 40px */
+    @media only screen and (max-width: 767px) {
+      body {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+</html>

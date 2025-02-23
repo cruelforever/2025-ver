@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - BM_1-5_to-all_change-size</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    /* 預設字體大小 */
+    body {
+      font-size: 16px;
+    }
+    
+    /* 在電腦上，字體大小不變 */
+    @media only screen and (min-width: 768px) {
+      body {
+        font-size: 24px;
+      }
+    }
+    
+    /* 在手機上，字體大小更改為 40px */
+    @media only screen and (max-width: 767px) {
+      body {
+        font-size: 36px;
+      }
+    }
+  </style>
+  <style>
+    
+    .credit {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      background-color: lightgray;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <img src="boy.jpg">
+  </div>
+<div id="app">
+<h1>你是一個牙醫師，面對一個四歲小孩哭著不想看牙，你會怎麼做？</h1>
+</h2>可重複選擇</h2>
+<br><br>
+<form>
+<input type="radio" id="option1" name="option" value="1">
+<label for="option1">不理他，等他安靜。</label>
+<br>
+<input type="radio" id="option2" name="option" value="2">
+<label for="option2">對他生氣，說哭什麼哭。</label>
+<br>
+<input type="radio" id="option3" name="option" value="3">
+<label for="option3">跟他說數到三還有哭，我請媽媽出去了。</label>
+<br>
+<input type="radio" id="option4" name="option" value="4">
+<label for="option4">拿出一個小貼紙，請他冷靜下來。</label>
+<br>
+<input type="radio" id="option5" name="option" value="5">
+<label for="option5">和家長說明行為管理的注意事項，請媽媽配合。</label>
+<br>
+<br><br>
+<button type="submit">選擇</button>
+</form>
+<p id="result"></p>
+<br>
+<br>
+<br>
+ <div class="credit">
+    盧育成兒童牙醫製作
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
