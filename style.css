@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>我的網頁</title>
   <style>
     /* 預設字體大小 */
     body {
       font-size: 16px;
+      margin-left: 0; /* 預設桌面版無左側邊距 */
     }
     
-    /* 在電腦上，字體大小不變 */
+    /* 在桌面版 (寬度 768px 以上) 使用較大字體 */
     @media only screen and (min-width: 768px) {
       body {
         font-size: 24px;
       }
     }
     
-    /* 在手機上，字體大小更改為 40px */
+    /* 在手機版 (寬度 767px 以下) 調整字體大小及左側邊距 */
     @media only screen and (max-width: 767px) {
       body {
-        font-size: 36px;
+        font-size: 40px;
+        margin-left: 33%;
       }
     }
   </style>
 </head>
-
+<body>
+  <p>這是示例文字，請確認手機上文字大小與左側起始位置是否符合需求。</p>
+</body>
 </html>
